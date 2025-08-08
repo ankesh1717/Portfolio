@@ -1,0 +1,8 @@
+/* src/App.css */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding-top: 70px;
+}
