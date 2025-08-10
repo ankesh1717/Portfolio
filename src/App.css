@@ -1,18 +1,22 @@
-/* src/App.css */
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  padding-top: 70px; /* default for desktop */
-}
-
-@media screen and (max-width: 768px) {
-  body {
-    padding-top: 110px; /* taller navbar on mobile */
-  }
+  padding-top: 0; /* remove the padding */
 }
 
 html, body {
   overflow-x: hidden;
+}
+
+/* Hero section spacing instead of body padding */
+.hero {
+  margin-top: 70px; /* desktop */
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    margin-top: 110px; /* mobile navbar space */
+  }
 }

@@ -1,7 +1,13 @@
 .navBar {
   background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
   padding: 0.2rem 1rem;
-  height: auto; /* Let the height adjust based on content */
+  height: auto; /* Let height adjust */
+  display: flex;
+  align-items: center;
+}
+
+.navbar {
+  width: 100%;
 }
 
 .navbar-brand {
@@ -11,13 +17,18 @@
 }
 
 .logo-img {
-  height: 70px;       /* Desktop size */
+  max-height: 70px;
   width: auto;
   object-fit: contain;
 }
 
 @media (max-width: 768px) {
   .logo-img {
-    height: 50px;     /* Smaller size for mobile */
+    max-height: 50px;
   }
+}
+
+/* Remove any unexpected body overflow */
+html, body {
+  overflow-x: hidden;
 }
