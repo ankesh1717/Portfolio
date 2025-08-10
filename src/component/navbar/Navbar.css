@@ -1,13 +1,7 @@
 .navBar {
   background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
-  padding: 0.2rem 1rem; /* Smaller padding for better control */
-  height: 70px;
-}
-
-.logo-img {
-  height: 150px;
-  width: auto;
-  object-fit: contain;
+  padding: 0.2rem 1rem;
+  height: auto; /* Let the height adjust based on content */
 }
 
 .navbar-brand {
@@ -16,14 +10,14 @@
   align-items: center;
 }
 
+.logo-img {
+  height: 70px;       /* Desktop size */
+  width: auto;
+  object-fit: contain;
+}
+
 @media (max-width: 768px) {
   .logo-img {
-    height: 50px;
+    height: 50px;     /* Smaller size for mobile */
   }
-}
-.logoImg {
-  height: 100px;               /* Adjust this to increase/decrease logo */
-  display: flex;
-  align-items: center;
-  overflow: visible;           /* Prevent clipping */
 }

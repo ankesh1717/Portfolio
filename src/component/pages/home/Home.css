@@ -1,24 +1,37 @@
 body {
-      background-color: #f8f9fa;
-      font-family: 'Segoe UI', sans-serif;
-    }
-    .hero {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      background: linear-gradient(120deg, #ffffff 0%, #e8f0f7 100%);
-      border-bottom: 2px solid black; /* Your 2px solid black border */
-    }
-    .hero h1 {
-      font-weight: 700;
-      font-size: 2.8rem;
-    }
-    .hero .btn-dark {
-      border-radius: 25px;
-      padding: 10px 25px;
-    }
-    .profile-img {
-      max-width:440px;
-      border-radius: 50%;
-      
-    }
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(120deg, #ffffff 0%, #e8f0f7 100%);
+  border-bottom: 2px solid black;
+  padding-top: 100px; /* desktop value */
+}
+
+/* Mobile fix for navbar overlap */
+@media screen and (max-width: 768px) {
+  .hero {
+    margin-top: 120px !important; /* push hero section below navbar */
+    padding-top: 20px; /* optional inside spacing */
+  }
+}
+
+
+.hero h1 {
+  font-weight: 700;
+  font-size: 2.8rem;
+}
+
+.hero .btn-dark {
+  border-radius: 25px;
+  padding: 10px 25px;
+}
+
+.profile-img {
+  max-width: 440px;
+  border-radius: 50%;
+}

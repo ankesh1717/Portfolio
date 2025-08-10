@@ -4,5 +4,15 @@ html {
 }
 
 body {
-  padding-top: 70px;
+  padding-top: 70px; /* default for desktop */
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    padding-top: 110px; /* taller navbar on mobile */
+  }
+}
+
+html, body {
+  overflow-x: hidden;
 }
